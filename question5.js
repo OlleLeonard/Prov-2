@@ -11,13 +11,21 @@ const car = {
   speed: 150,
 };
 
-function updateCarInfo(carObject, newCar, newModel, newSpeed) {
+function updateCarInfo(carObject, newName, newModel, newSpeed) {
 
-   
-  const bil = newCar((newCar) => {
-    return newCar[0] == "Opel";
-  });
-  return carObject
-}
+    const Name = {...newName };
+    Name.name = ["Opel"];
 
+    const Model = {...newModel };
+    Model.model = ["Model A"];
+
+    const Speed = {...newSpeed };
+    Speed.speed = [160];
+
+    return carObject = Speed && Model && Name;
+  }
+  
 console.log(updateCarInfo(car))
+
+  
+
