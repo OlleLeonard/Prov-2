@@ -1,0 +1,31 @@
+
+p{
+    margin: 15px;
+    padding: 20px;
+    background-color: #dddddd;
+    font-size: 16px;
+    color: #333333;
+}
+
+.big {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+}
+
+p:hover {
+    background-color: #eeeeee;
+  }
+
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+@media (min-width: 668px ){
+    div{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
