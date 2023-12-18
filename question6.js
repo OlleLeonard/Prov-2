@@ -6,7 +6,7 @@ function findLongestString(strings) {
   let largest = strings[0];
 
   strings.forEach((ord) => {
-   if (ord > largest) {
+   if (ord.length > largest.length) {
      largest = ord;
    }
   });
