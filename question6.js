@@ -5,14 +5,11 @@
 function findLongestString(strings) {
   let largest = strings[0];
 
-  for(let i=0; i < strings.length; i++){
-      
-strings.forEach((largest) => {
-   if (strings < largest) {
-     largest = strings;
+  strings.forEach((ord) => {
+   if (ord > largest) {
+     largest = ord;
    }
-   }); 
-  }
+  });
 
   return largest;
 }
